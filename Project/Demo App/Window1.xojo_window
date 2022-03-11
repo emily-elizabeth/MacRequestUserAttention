@@ -155,13 +155,13 @@ End
 #tag WindowCode
 	#tag Method, Flags = &h21
 		Private Sub RequestAttention()
-		  MacRequestUserAttention.RequestUserAttention
+		  MacRequestUserAttention
 		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h21
 		Private Sub RequestAttentionCritical()
-		  MacRequestUserAttention.RequestUserAttention TRUE
+		  MacRequestUserAttention TRUE
 		End Sub
 	#tag EndMethod
 

@@ -1,7 +1,7 @@
 #tag Module
 Protected Module MacRequestUserAttention
-	#tag Method, Flags = &h1
-		Protected Sub RequestUserAttention(critical As Boolean = FALSE)
+	#tag Method, Flags = &h0
+		Sub MacRequestUserAttention(critical As Boolean = FALSE)
 		  #if TargetCocoa
 		    Declare Function NSClassFromString Lib "Cocoa" (aClassName As CFStringRef) As Ptr
 		    Declare Function NSSelectorFromString Lib "Cocoa" (aSelectorName As CFStringRef) As Ptr
